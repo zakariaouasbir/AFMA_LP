@@ -1,0 +1,16 @@
+footer {
+  height: 40px;
+  font-size: 0.75rem;
+  background-color: var(--bg-secondary);
+  border-top: 0px solid var(--border-color);
+  margin-top: -1px;
+  padding: 0 20px;
+  text-align: right;
+  .flex {
+    @media screen and (max-width: 450px) {
+      justify-content: center;
+      margin: auto;
+      padding: 0px;
+    }
+  }
+}

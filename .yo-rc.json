@@ -1,0 +1,33 @@
+{
+  "generator-ngx-rocket": {
+    "version": "11.0.0",
+    "props": {
+      "location": "path",
+      "strict": true,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "AFMA",
+      "target": ["web"],
+      "ui": "bootstrap",
+      "features": ["pwa", "lazy", "cypress", "angulartics"],
+      "languages": ["en-US", "fr-FR"],
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "G-5BVMH4GZN5",
+      "tools": ["prettier"],
+      "utility": ["moment"],
+      "deploy": "netlify",
+      "projectName": "afma",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": [],
+      "pwa": true,
+      "auth": false,
+      "lazy": true,
+      "e2e": false,
+      "cypress": true,
+      "angulartics": true
+    }
+  }
+}
