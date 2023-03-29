@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { HomeComponent } from './home.component';
-import { LandingPageService } from '@app/landingpage/landingpage.service';
+import { SimulatorService } from '@app/simulator/simulator.service';
 
 const routes: Routes = [
-  LandingPageService.childRoutes([
+  SimulatorService.childRoutes([
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, data: { title: marker('Home') } },
+    { path: 'home', component: HomeComponent, data: { title: 'Home' } },
   ]),
 ];
 

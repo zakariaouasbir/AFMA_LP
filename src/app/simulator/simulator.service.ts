@@ -1,10 +1,10 @@
 import { Routes, Route } from '@angular/router';
-import { LandingPageComponent } from './landingpage.component';
+import { SimulatorComponent } from './simulator.component';
 
 /**
  * Provides helper methods to create routes.
  */
-export class LandingPageService {
+export class SimulatorService {
   /**
    * Creates routes using the LandingPageService component and authentication.
    * @param routes The routes to add.
@@ -13,7 +13,7 @@ export class LandingPageService {
   static childRoutes(routes: Routes): Route {
     return {
       path: '',
-      component: LandingPageComponent,
+      component: SimulatorComponent,
       children: routes,
     };
   }

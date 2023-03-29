@@ -1,7 +1,7 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { LandingPageComponent } from './landingpage.component';
-import { LandingPageService } from './landingpage.service';
+import { LandingPageService } from '../simulator/simulator.service';
 
 describe('LandingPageService', () => {
   beforeEach(() => {

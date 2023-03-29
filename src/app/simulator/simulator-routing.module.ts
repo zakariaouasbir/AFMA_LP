@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { SimulatorComponent } from './simulator.component';
 
-const routes: Routes = [
-  // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: SimulatorComponent, data: { title: marker('About') } },
-];
+const routes: Routes = [{ path: '', component: SimulatorComponent, data: { title: 'Simulateur' } }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

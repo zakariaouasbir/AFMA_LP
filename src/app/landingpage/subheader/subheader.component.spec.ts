@@ -2,22 +2,22 @@ import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { HeaderComponent } from './header.component';
+import { SubHeaderComponent } from './subheader.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('SubSubHeaderComponent', () => {
+  let component: SubHeaderComponent;
+  let fixture: ComponentFixture<SubHeaderComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, NgbModule],
-      declarations: [HeaderComponent],
+      declarations: [SubHeaderComponent],
       providers: [],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(SubHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
