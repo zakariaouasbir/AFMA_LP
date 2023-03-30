@@ -6,9 +6,10 @@ import { LandingPageComponent } from './landingpage.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubHeaderComponent } from './subheader/subheader.component';
+import { FirstSectionComponent } from './firstSection/firstSection.component';
 
 @NgModule({
   imports: [CommonModule, NgbModule, RouterModule],
-  declarations: [HeaderComponent, LandingPageComponent, SubHeaderComponent, FooterComponent],
+  declarations: [HeaderComponent, LandingPageComponent, SubHeaderComponent, FirstSectionComponent, FooterComponent],
 })
 export class LandingPageModule {}

@@ -1,17 +1,23 @@
-.subheader {
+.container {
+  background-image: url(../../../assets/landingPage/bg.png);
+  background-size: cover;
+  min-height: 600px;
 }
-.row {
-  margin-left: 128px;
-  margin-right: 120px;
+
+.main-name {
+  color: #54a3d7;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  text-shadow: none;
+  word-spacing: 5.4px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
 }
 
 .btn {
   text-align: left;
   margin-top: 24px;
   background-color: #54a3d7;
-}
-
-h2 {
-  position: relative;
-  top: 43px;
 }

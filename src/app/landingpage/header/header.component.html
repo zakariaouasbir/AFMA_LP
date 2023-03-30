@@ -1,56 +1,54 @@
-<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="https://github.com/ngx-rocket" >APP_NAME</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        aria-controls="navbar-menu"
-        aria-label="Toggle navigation"
-        (click)="toggleMenu()"
-        [attr.aria-expanded]="!menuHidden"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
-        <div class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/lp" routerLinkActive="active">
-            <!-- <i class="fas fa-home"></i> -->
-            <span>Particuliers</span>
-          </a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="https://github.com/ngx-rocket" >APP_NAME</a> -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="!menuHidden"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
+      <div class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/lp" routerLinkActive="active">
+          <!-- <i class="fas fa-home"></i> -->
+          <span>Particuliers</span>
+        </a>
 
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator" routerLinkActive="active">
-            <!-- <i class="fas fa-question-circle"></i> -->
-            <span>Professionels</span>
-          </a>
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator" routerLinkActive="active">
+          <!-- <i class="fas fa-question-circle"></i> -->
+          <span>Professionels</span>
+        </a>
 
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator1" routerLinkActive="active">
-            <!-- <i class="fas fa-question-circle"></i> -->
-            <span>Entreprises</span>
-          </a>
-        </div>
-        <div class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/home1" routerLinkActive="active">
-            <!-- <i class="fas fa-home"></i> -->
-            <span>Trouver une Agence</span>
-          </a>
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator1" routerLinkActive="active">
+          <!-- <i class="fas fa-question-circle"></i> -->
+          <span>Entreprises</span>
+        </a>
+      </div>
+      <div class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/home1" routerLinkActive="active">
+          <!-- <i class="fas fa-home"></i> -->
+          <span>Trouver une Agence</span>
+        </a>
 
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator2" routerLinkActive="active">
-            <!-- <i class="fas fa-question-circle"></i> -->
-            <span>Reclamation</span>
-          </a>
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator2" routerLinkActive="active">
+          <!-- <i class="fas fa-question-circle"></i> -->
+          <span>Reclamation</span>
+        </a>
 
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator3" routerLinkActive="active">
-            <!-- <i class="fas fa-question-circle"></i> -->
-            <span>Contact</span>
-          </a>
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator3" routerLinkActive="active">
+          <!-- <i class="fas fa-question-circle"></i> -->
+          <span>Contact</span>
+        </a>
 
-          <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator4" routerLinkActive="active">
-            <!-- <i class="fas fa-question-circle"></i> -->
-            <span>Carrieres</span>
-          </a>
-        </div>
+        <a class="nav-item nav-link text-uppercase text-color" routerLink="/simulator4" routerLinkActive="active">
+          <!-- <i class="fas fa-question-circle"></i> -->
+          <span>Carrieres</span>
+        </a>
       </div>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
