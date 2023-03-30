@@ -8,3 +8,38 @@
   margin-top: 24px;
   background-color: #54a3d7;
 }
+
+.card {
+  border: 0px;
+  text-align: center;
+}
+
+.card h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-img-top {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.card-img-bottom {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter [class*="col-"]:not(:first-child),
+.row.no-gutter [class*="col-"]:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row > div {
+  background: lightgrey;
+}
