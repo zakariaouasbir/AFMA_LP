@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--bg-secondary);
+  min-height: 400px;
+}
+
+.main-name {
+  color: #54a3d7;
+  text-align: center;
+}
+
+.btn {
+  text-align: left;
+  margin-top: 24px;
+  background-color: var(--bg-secondary);
+  color: #edeef1;
+}
+
+.card {
+  width: 70%;
+  border: 1px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #54a3d7;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e5eef4;
+}
+
+.card-img-top {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.row p {
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #eef0f0;
+}

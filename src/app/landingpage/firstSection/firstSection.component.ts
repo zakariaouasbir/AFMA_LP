@@ -1,23 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { fadeInRight } from 'ng-animate';
+import { fadeInLeft } from 'ng-animate';
 
 @Component({
   selector: 'app-firstsection',
   templateUrl: './firstSection.component.html',
   styleUrls: ['./firstSection.component.scss'],
   animations: [
-    trigger('bounce', [transition('* => *', useAnimation(fadeInRight, { params: { timing: 1, delay: 0 } }))]),
+    trigger('bounce', [transition('* => *', useAnimation(fadeInLeft, { params: { timing: 1, delay: 0 } }))]),
   ],
 })
 export class FirstSectionComponent implements OnInit {
-  menuHidden = true;
-
   constructor() {}
 
   ngOnInit() {}
 
-  toggleMenu() {
-    this.menuHidden = !this.menuHidden;
-  }
+  toggleMenu() {}
 }
