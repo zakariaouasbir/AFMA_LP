@@ -7,10 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubHeaderComponent } from './subheader/subheader.component';
 import { FirstSectionComponent } from './firstSection/firstSection.component';
-import { SecondSectionComponent } from './secondsection/secondSection.component';
+import { SecondSectionComponent } from './secondSection/secondSection.component';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
-  imports: [CommonModule, NgbModule, RouterModule],
+  imports: [CommonModule, NgbModule, RouterModule, AngularTiltModule],
   declarations: [
     HeaderComponent,
     LandingPageComponent,
