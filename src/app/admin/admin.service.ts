@@ -1,10 +1,10 @@
 import { Routes, Route } from '@angular/router';
-import { HomeComponent } from './home.component';
+import { AdminComponent } from './admin.component';
 
 /**
  * Provides helper methods to create routes.
  */
-export class HomeService {
+export class AdminService {
   /**
    * Creates routes using the LandingPageService component and authentication.
    * @param routes The routes to add.
@@ -13,7 +13,7 @@ export class HomeService {
   static childRoutes(routes: Routes): Route {
     return {
       path: '',
-      component: HomeComponent,
+      component: AdminComponent,
       children: routes,
     };
   }

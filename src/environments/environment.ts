@@ -9,11 +9,10 @@
 // Note that as usual, any environment variables you expose through it will end up in your
 // bundle, and you should not use it for any sensitive information like passwords or keys.
 import { env } from './.env';
-
+export const serverUrl = 'http://localhost:8080/api/v1/';
 export const environment = {
   production: false,
   version: env['npm_package_version'] + '-dev',
-  serverUrl: '/api',
 };
 
 /*

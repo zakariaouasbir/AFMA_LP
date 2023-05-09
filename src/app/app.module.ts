@@ -9,11 +9,26 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Angulartics2Module } from 'angulartics2';
 import { environment } from '@env/environment';
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
-import { HomeModule } from './home/home.module';
+import { AdminModule } from './admin/admin.module';
 import { LandingPageModule } from './landingpage/landingpage.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EffectsModule } from '@ngrx/effects';
+import { ActionReducer, MetaReducer, StoreModule } from '@ngrx/store';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { CustomSerializer } from './store/router/custom-serializer';
+import { QuestionEffect } from './store/state/question/question.effects';
+import { appReducer } from './store/app.state';
+import { localStorageSync } from 'ngrx-store-localstorage';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
+export function localStorageSyncReducer(reducer: ActionReducer<any>): ActionReducer<any> {
+  return localStorageSync({
+    keys: ['question'],
+    rehydrate: true,
+  })(reducer);
+}
+const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,7 +40,17 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule,
     SharedModule,
     LandingPageModule,
-    HomeModule,
+    AdminModule,
+    EffectsModule.forRoot([QuestionEffect]),
+    StoreModule.forRoot(appReducer, { metaReducers }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),
+
+    StoreRouterConnectingModule.forRoot({
+      serializer: CustomSerializer,
+    }),
     Angulartics2Module.forRoot(),
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],

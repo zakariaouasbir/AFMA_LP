@@ -4,23 +4,23 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { Angulartics2Module } from 'angulartics2';
 
 import { SharedModule } from '@shared';
-import { HomeComponent } from './home.component';
+import { AdminComponent } from './admin.component';
 import { QuoteService } from './quote.service';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('AdminComponent', () => {
+  let component: AdminComponent;
+  let fixture: ComponentFixture<AdminComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, Angulartics2Module.forRoot(), SharedModule, HttpClientTestingModule],
-      declarations: [HomeComponent],
+      declarations: [AdminComponent],
       providers: [QuoteService],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(AdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

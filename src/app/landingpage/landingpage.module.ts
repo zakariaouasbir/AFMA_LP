@@ -9,6 +9,7 @@ import { SubHeaderComponent } from './subheader/subheader.component';
 import { FirstSectionComponent } from './firstSection/firstSection.component';
 import { SecondSectionComponent } from './secondSection/secondSection.component';
 import { AngularTiltModule } from 'angular-tilt';
+import { ThirdSectionComponent } from './thirdSection/thirdSection.component';
 
 @NgModule({
   imports: [CommonModule, NgbModule, RouterModule, AngularTiltModule],
@@ -18,6 +19,7 @@ import { AngularTiltModule } from 'angular-tilt';
     SubHeaderComponent,
     FirstSectionComponent,
     SecondSectionComponent,
+    ThirdSectionComponent,
     FooterComponent,
   ],
 })

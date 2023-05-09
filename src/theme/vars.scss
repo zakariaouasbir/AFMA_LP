@@ -3,6 +3,8 @@
   --bg-secondary: #2f3d6d;
   --bg-sub-footer: #1e2632;
   --border-color-subfooter: #6c666b;
+  --bg-callusLeft: #d3d7e0;
+  --bg-callusRight: #eaeff5;
   --bg-teritary: #2d343a;
   --bg-transparent: #283035e0;
   --bg: #202427;
@@ -24,6 +26,8 @@
   --space: 25px;
   --space-x2: 50px;
   --success-bg: #5bb19640;
+
+  $offcanvas-horizontal-width: 100px;
 
   @media screen and (max-width: 550px) {
     --space: 20px;

@@ -1,0 +1,11 @@
+@import "src/theme/theme-variables";
+
+.navbar {
+  margin-bottom: $spacer;
+  background-color: var(--bg-secondary);
+}
+
+#navbar-menu {
+  padding-left: 18px;
+  margin-left: 18px;
+}
